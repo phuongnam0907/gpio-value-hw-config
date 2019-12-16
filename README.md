@@ -11,20 +11,20 @@ Project ORCA7 v2 - Android 7.1.2
 
 2. <b>DEVICE TREE</b>
 ```
-	gpio-value-hw-cfg{
-		compatible = "orca7,v2,hwconfig";
-		status = "okay";
+gpio-value-hw-cfg{
+	compatible = "orca7,v2,hwconfig";
+	status = "okay";
 
-		interrupt-controller;
+	interrupt-controller;
 
-		hw-cfg {
-				pin0 = <&msm_gpio 68 1>;
-				pin1 = <&msm_gpio 69 1>;
-				pin2 = <&msm_gpio 88 1>;
-				pin3 = <&msm_gpio 89 1>;
-		};
-
+	hw-cfg {
+			pin0 = <&msm_gpio 68 1>;
+			pin1 = <&msm_gpio 69 1>;
+			pin2 = <&msm_gpio 88 1>;
+			pin3 = <&msm_gpio 89 1>;
 	};
+
+};
 ```
 
 3. <b>Defconfig</b>
